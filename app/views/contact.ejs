@@ -4,41 +4,45 @@
     <!--<img src="img/logo.png" alt="logo">-->
 <main class="ontainer">
 <div class="jumbotron">
-    <h1 class="display-4">You can <%= title %> me by:</h1>
-    <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Email</td>
-            <td>silvabruna.pro@gmail.com // brunafernanda.10@hotmail.com</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Phone</td>
-            <td>(641)904-2166</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>GitHub</td>
-            <td>github.com/BrunaPro</td>
-          </tr>
-          <tr>
-            <th scope="row">4</th>
-            <td>Linkedln</td>
-            <td>linkedin.com/in/bruna-silva-pro/</td>
-          </tr>
-          <tr>
-            <th scope="row">5</th>
-            <td>Fax</td>
-            <td>123-3455-6776</td>
-          </tr>
-        </tbody>
-      </table>
+    <h3 class="display-4"><%= title %> me:</h3>
+    <form action="processar_formulario.php" method="POST" id="formaboutme">
+        <label for="primeiro_nome">First name:</label>
+        <input type="text" id="primeiro_nome" name="primeiro_nome" required><br>
+
+        <label for="ultimo_nome">Last name:</label>
+        <input type="text" id="ultimo_nome" name="ultimo_nome" required><br>
+
+        <label for="telefone">Phone:</label>
+        <input type="tel" id="telefone" name="telefone" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="mensagem">Message:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br>
+
+        <input type="submit" value="submit">
+    </form>
+    <p></p>
+    <p id="contac"> You can also call me or check my socials media</p>
+    <table>
+      <tr>
+          <th>Social</th>
+          <th>Data</th>
+      </tr>
+      <tr>
+          <td>Phone Number:</td>
+          <td>(647) 904-2166</td>
+      </tr>
+      <tr>
+          <td>GitHub:</td>
+          <td><a href="https://github.com/BrunaPro" target="_blank">BrunaPro</a></td>
+      </tr>
+      <tr>
+          <td>LinkedIn:</td>
+          <td><a href="https://www.linkedin.com/in/bruna-silva-pro/" target="_blank">bruna-silva-pro</a></td>
+      </tr>
+  </table>
     </div>
 </main>
 
