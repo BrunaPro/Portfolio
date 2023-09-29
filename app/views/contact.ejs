@@ -4,7 +4,7 @@
     <!--<img src="img/logo.png" alt="logo">-->
 <main class="ontainer">
 <div class="jumbotron">
-    <h3 class="display-4"><%= title %> me:</h3>
+    <h3 ><%= title %> me</h3>
     <form action="processar_formulario.php" method="POST" id="formaboutme">
         <label for="primeiro_nome">First name:</label>
         <input type="text" id="primeiro_nome" name="primeiro_nome" required><br>
@@ -23,6 +23,18 @@
 
         <input type="submit" value="submit">
     </form>
+    
+    <script>
+        function submitForm() {
+            var firstName = document.getElementById("firstName").value;
+            var lastName = document.getElementById("lastName").value;
+            var contactNumber = document.getElementById("contactNumber").value;
+            var emailAddress = document.getElementById("emailAddress").value;
+            var message = document.getElementById("message").value;
+            window.location.href = "home.html";
+        }
+    </script>
+
     <p></p>
     <p id="contac"> You can also call me or check my socials media</p>
     <table>
